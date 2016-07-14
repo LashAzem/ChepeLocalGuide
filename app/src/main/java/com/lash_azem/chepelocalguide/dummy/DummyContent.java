@@ -26,10 +26,10 @@ public class DummyContent {
     //private static final int COUNT = 25;
 
     static {
-        addItem(new DummyItem("Leños", "110 mts norte de J&T hacia la Ulatina, San Pedro", "¿Anteojos de madera? ¿Por qué no? La madera demuestra su gran versatilidad y ese toque natural del cual carecen otros materiales."));
-        addItem(new DummyItem("2", "COLIBRÍ", "Los troquilinos (Trochilinae) son..."));
-        addItem(new DummyItem("2", "CUERVO", "El cuervo común (Corvus corax) es ..."));
-        addItem(new DummyItem("3", "FLAMENCO", "Los fenicopteriformes..."));
+        addItem(new DummyItem("1", "Leños", "¿Anteojos de madera? ¿Por qué no? La madera demuestra su gran versatilidad y ese toque natural del cual carecen otros materiales."));
+        addItem(new DummyItem("2", "Mar Rojo", "The latest fashion trends worldwide, in Costa Rica. ONLINE & MOBILE BOUTIQUE"));
+        addItem(new DummyItem("2", "Wear Bona Fide", "Fabric Necklaces Handmade"));
+        addItem(new DummyItem("3", "Tijo", "Tijo es una marca costarricense de ropa. Nuestros productos son originales y cada prenda es exclusiva y numerada."));
         addItem(new DummyItem("4", "KIWI", "Los kiwis (Apterix, gr. 'sin alas') son..."));
         addItem(new DummyItem("5", "LORO", "Las Psitácidas (Psittacidae) son..."));
         addItem(new DummyItem("6", "PAVO", "Pavo es un género de aves..."));
