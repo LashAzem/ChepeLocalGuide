@@ -33,6 +33,10 @@ public class DummyContent {
         addItem(new DummyItem("4", "KIWI", "Los kiwis (Apterix, gr. 'sin alas') son..."));
         addItem(new DummyItem("5", "LORO", "Las Psitácidas (Psittacidae) son..."));
         addItem(new DummyItem("6", "PAVO", "Pavo es un género de aves..."));
+        addItem(new DummyItem("7", "PAVO", "Pavo es un género de aves..."));
+        addItem(new DummyItem("8", "PAVO", "Pavo es un género de aves..."));
+        addItem(new DummyItem("9", "PAVO", "Pavo es un género de aves..."));
+        addItem(new DummyItem("10", "PAVO", "Pavo es un género de aves..."));
     }
 
     private static void addItem(DummyItem item) {

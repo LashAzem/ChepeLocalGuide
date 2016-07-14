@@ -70,9 +70,5 @@ public class BrandViewAdapter extends RecyclerView.Adapter<BrandViewAdapter.View
             mContentView = (TextView) view.findViewById(R.id.content);
         }
 
-        @Override
-        public String toString() {
-            return super.toString() + " '" + mContentView.getText() + "'";
-        }
     }
 }
