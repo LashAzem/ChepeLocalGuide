@@ -1,5 +1,7 @@
 package com.lash_azem.chepelocalguide.dummy;
 
+import com.lash_azem.chepelocalguide.R;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,10 +28,14 @@ public class DummyContent {
     //private static final int COUNT = 25;
 
     static {
-        addItem(new DummyItem("1", "Leños", "¿Anteojos de madera? ¿Por qué no? La madera demuestra su gran versatilidad y ese toque natural del cual carecen otros materiales."));
-        addItem(new DummyItem("2", "Mar Rojo", "The latest fashion trends worldwide, in Costa Rica. ONLINE & MOBILE BOUTIQUE"));
-        addItem(new DummyItem("2", "Wear Bona Fide", "Fabric Necklaces Handmade"));
-        addItem(new DummyItem("3", "Tijo", "Tijo es una marca costarricense de ropa. Nuestros productos son originales y cada prenda es exclusiva y numerada."));
+        addItem(new DummyItem("1","Leños", "¿Anteojos de madera? ¿Por qué no? La madera demuestra su gran versatilidad y ese toque natural del cual carecen otros materiales.", R.drawable.local_dummy));
+        addItem(new DummyItem("2", "Mar Rojo", "The latest fashion trends worldwide, in Costa Rica. ONLINE & MOBILE BOUTIQUE", R.drawable.local_dummy));
+        addItem(new DummyItem("3", "Wear Bona Fide", "Fabric Necklaces Handmade", R.drawable.local_dummy));
+        addItem(new DummyItem("4", "Tijo", "Tijo es una marca costarricense de ropa. Nuestros productos son originales y cada prenda es exclusiva y numerada.", R.drawable.local_dummy));
+        addItem(new DummyItem("5", "Plivertees", "Camisas Serigrafia", R.drawable.local_dummy));
+        addItem(new DummyItem("6", "Boza", "Bolsos de Cuero", R.drawable.local_dummy));
+        addItem(new DummyItem("7", "Tienda Eñe", "Tienda de Variedades", R.drawable.local_dummy));
+        addItem(new DummyItem("8", "Cafe Miel", "Cafeteria", R.drawable.local_dummy));
     }
 
     private static void addItem(DummyItem item) {
@@ -45,11 +51,13 @@ public class DummyContent {
         public final String id;
         public final String content;
         public final String details;
+        public final int cover;
 
-        public DummyItem(String id, String content, String details) {
+        public DummyItem(String id, String content, String details, int cover) {
             this.id = id;
             this.content = content;
             this.details = details;
+            this.cover = cover;
         }
 
         @Override
