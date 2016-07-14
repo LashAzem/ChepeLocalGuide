@@ -12,6 +12,9 @@
     tools:context="com.lash_azem.chepelocalguide.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
