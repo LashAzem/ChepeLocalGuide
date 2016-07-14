@@ -30,13 +30,6 @@ public class DummyContent {
         addItem(new DummyItem("2", "Mar Rojo", "The latest fashion trends worldwide, in Costa Rica. ONLINE & MOBILE BOUTIQUE"));
         addItem(new DummyItem("2", "Wear Bona Fide", "Fabric Necklaces Handmade"));
         addItem(new DummyItem("3", "Tijo", "Tijo es una marca costarricense de ropa. Nuestros productos son originales y cada prenda es exclusiva y numerada."));
-        addItem(new DummyItem("4", "KIWI", "Los kiwis (Apterix, gr. 'sin alas') son..."));
-        addItem(new DummyItem("5", "LORO", "Las Psitácidas (Psittacidae) son..."));
-        addItem(new DummyItem("6", "PAVO", "Pavo es un género de aves..."));
-        addItem(new DummyItem("7", "PAVO", "Pavo es un género de aves..."));
-        addItem(new DummyItem("8", "PAVO", "Pavo es un género de aves..."));
-        addItem(new DummyItem("9", "PAVO", "Pavo es un género de aves..."));
-        addItem(new DummyItem("10", "PAVO", "Pavo es un género de aves..."));
     }
 
     private static void addItem(DummyItem item) {
