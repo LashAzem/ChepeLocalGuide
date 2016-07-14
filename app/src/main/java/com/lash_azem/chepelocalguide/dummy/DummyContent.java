@@ -26,8 +26,8 @@ public class DummyContent {
     //private static final int COUNT = 25;
 
     static {
-        addItem(new DummyItem("0", "BUHO", "Búho es el nombre común..."));
-        addItem(new DummyItem("1", "COLIBRÍ", "Los troquilinos (Trochilinae) son..."));
+        addItem(new DummyItem("Leños", "110 mts norte de J&T hacia la Ulatina, San Pedro", "¿Anteojos de madera? ¿Por qué no? La madera demuestra su gran versatilidad y ese toque natural del cual carecen otros materiales."));
+        addItem(new DummyItem("2", "COLIBRÍ", "Los troquilinos (Trochilinae) son..."));
         addItem(new DummyItem("2", "CUERVO", "El cuervo común (Corvus corax) es ..."));
         addItem(new DummyItem("3", "FLAMENCO", "Los fenicopteriformes..."));
         addItem(new DummyItem("4", "KIWI", "Los kiwis (Apterix, gr. 'sin alas') son..."));
@@ -39,7 +39,7 @@ public class DummyContent {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
-    
+
 
     /**
      * A dummy item representing a piece of content.
