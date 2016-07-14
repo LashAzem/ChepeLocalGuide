@@ -5,6 +5,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lash_azem.chepelocalguide.BrandFragment.OnListFragmentInteractionListener;
@@ -40,7 +41,8 @@ public class BrandViewAdapter extends RecyclerView.Adapter<BrandViewAdapter.View
         holder.mItem = mValues.get(position);
         //holder.mIdView.setText(mValues.get(position).id);
         holder.mContentView.setText(mValues.get(position).content);
-        holder.mDetailView.setText(mValues.get(position).details);
+        //holder.mDetailView.setText(mValues.get(position).details);
+        holder.mCover.setImageResource(mValues.get(position).cover);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +65,8 @@ public class BrandViewAdapter extends RecyclerView.Adapter<BrandViewAdapter.View
         public final View mView;
         //public final TextView mIdView;
         public final TextView mContentView;
-        public final TextView mDetailView;
+        public ImageView mCover;
+        //public final TextView mDetailView;
         public DummyItem mItem;
         public final CardView cv;
 
@@ -73,7 +76,8 @@ public class BrandViewAdapter extends RecyclerView.Adapter<BrandViewAdapter.View
             cv = (CardView)view.findViewById(R.id.cv);
             //mIdView = (TextView) view.findViewById(R.id.id);
             mContentView = (TextView) view.findViewById(R.id.content);
-            mDetailView = (TextView) view.findViewById(R.id.details);
+            mCover = (ImageView) view.findViewById(R.id.cover);
+            //mDetailView = (TextView) view.findViewById(R.id.details);
         }
 
     }

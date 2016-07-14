@@ -5,6 +5,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="introtext">IntroText</string>
+    <string name="introimageview">IntroImageView</string>
+    <string name="noname"></string>
 
     <string-array name="Planets">
         <item>Sun</item>
