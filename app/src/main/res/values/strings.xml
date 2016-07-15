@@ -13,12 +13,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="title_activity_welcome">Home Screen</string>
-    <string name="next">NEXT</string>
-    <string name="skip">SKIP</string>
-    <string name="start">GOT IT</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="skip">SALTAR</string>
+    <string name="start">ENTENDIDO</string>
 
     <string name="slide_1_title">Bienvenido</string>
-    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+    <string name="slide_1_desc">Lorem Ipsum Dolor Sit Amet!</string>
 
     <string name="slide_2_title">Descubre</string>
     <string name="slide_2_desc">Emprendedores, artistas, diseñadores!</string>
@@ -30,6 +30,6 @@
     <string name="slide_4_desc">A tus amigos tus productos favoritos!</string>
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
-    <string name="play_again">Play Again</string>
+    <string name="play_again">Repetir</string>
 
 </resources>
