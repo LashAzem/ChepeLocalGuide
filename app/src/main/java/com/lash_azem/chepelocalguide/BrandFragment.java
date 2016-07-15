@@ -18,12 +18,6 @@ import com.lash_azem.chepelocalguide.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 
-/**
- * A fragment representing a list of Items.
- * <p/>
- * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
- * interface.
- */
 public class BrandFragment extends Fragment  {
 
     // TODO: Customize parameter argument names
@@ -32,10 +26,6 @@ public class BrandFragment extends Fragment  {
     private int mColumnCount = 2;
     private OnListFragmentInteractionListener mListener;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public BrandFragment() {
     }
 

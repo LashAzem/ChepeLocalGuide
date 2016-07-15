@@ -94,21 +94,15 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.nav_home) {
             setFragment(0);
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
+        } else if (id == R.id.nav_favorites) {
+            setFragment(1);
         } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            setFragment(2);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -119,6 +113,8 @@ public class MainActivity extends AppCompatActivity
     public void setFragment(int position) {
         FragmentManager fragmentManager;
         FragmentTransaction fragmentTransaction;
+        String title = "";
+
         switch (position) {
             case 0:
                 fragmentManager = getSupportFragmentManager();
@@ -126,9 +122,22 @@ public class MainActivity extends AppCompatActivity
                 BrandFragment brandFragment = new BrandFragment();
                 fragmentTransaction.replace(R.id.fragment, brandFragment);
                 fragmentTransaction.commit();
+                title="Inicio";
                 break;
-
+            case 1:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                FavoritesFragment favoritesFragment = new FavoritesFragment();
+                fragmentTransaction.replace(R.id.fragment, favoritesFragment);
+                fragmentTransaction.commit();
+                title="Favoritos";
+                break;
+            case 2:
+                break;
         }
+
+
+        getSupportActionBar().setTitle(title);
     }
 
     @Override
@@ -169,5 +178,9 @@ public class MainActivity extends AppCompatActivity
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
+    }
+    public void setToolbar(Toolbar toolbar) {
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

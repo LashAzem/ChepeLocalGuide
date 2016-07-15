@@ -36,6 +36,10 @@ public class DummyContent {
         addItem(new DummyItem("6", "Boza", "Bolsos de Cuero", R.drawable.local_dummy));
         addItem(new DummyItem("7", "Tienda Eñe", "Tienda de Variedades", R.drawable.local_dummy));
         addItem(new DummyItem("8", "Cafe Miel", "Cafeteria", R.drawable.local_dummy));
+        addItem(new DummyItem("9", "De Aqui y de Alla", "Tienda de variedades", R.drawable.local_dummy));
+        addItem(new DummyItem("10", "11:11 Banda", "Banda Costarricense", R.drawable.local_dummy));
+        addItem(new DummyItem("11", "NOMELLAMO", "Taller de creacion de Peluches", R.drawable.local_dummy));
+        addItem(new DummyItem("12", "Gato Negro", "Joyeria", R.drawable.local_dummy));
     }
 
     private static void addItem(DummyItem item) {
