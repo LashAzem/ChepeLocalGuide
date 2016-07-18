@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ListView;
 
 import com.lash_azem.chepelocalguide.dummy.DummyContent;
 import com.lash_azem.chepelocalguide.dummy.DummyContent.DummyItem;
@@ -64,7 +65,9 @@ public class BrandFragment extends Fragment  {
             }
             recyclerView.setAdapter(new BrandViewAdapter(DummyContent.ITEMS, mListener));
         }
+
         return view;
+
     }
 
 

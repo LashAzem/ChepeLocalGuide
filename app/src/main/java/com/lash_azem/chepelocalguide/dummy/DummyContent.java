@@ -39,7 +39,14 @@ public class DummyContent {
         addItem(new DummyItem("9", "De Aqui y de Alla", "Tienda de variedades", R.drawable.local_dummy));
         addItem(new DummyItem("10", "11:11 Banda", "Banda Costarricense", R.drawable.local_dummy));
         addItem(new DummyItem("11", "NOMELLAMO", "Taller de creacion de Peluches", R.drawable.local_dummy));
-        addItem(new DummyItem("12", "Gato Negro", "Joyeria", R.drawable.local_dummy));
+        addItem(new DummyItem("12", "Aromaflor", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.", R.drawable.local_dummy));
+        addItem(new DummyItem("13", "Nomada", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.", R.drawable.local_dummy));
+        addItem(new DummyItem("14", "Trash", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.", R.drawable.local_dummy));
+        addItem(new DummyItem("15", "Va de Nuevo", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.", R.drawable.local_dummy));
+        addItem(new DummyItem("16", "Pez", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.", R.drawable.local_dummy));
+        addItem(new DummyItem("17", "Cabeza de vinil Banda", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaq", R.drawable.local_dummy));
+        addItem(new DummyItem("18", "Gato Negro", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaq", R.drawable.local_dummy));
+        addItem(new DummyItem("19", "Nabruk", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaq", R.drawable.local_dummy));
     }
 
     private static void addItem(DummyItem item) {
@@ -53,20 +60,20 @@ public class DummyContent {
      */
     public static class DummyItem {
         public final String id;
-        public final String content;
+        public final String name;
         public final String details;
         public final int cover;
 
-        public DummyItem(String id, String content, String details, int cover) {
+        public DummyItem(String id, String name, String details, int cover) {
             this.id = id;
-            this.content = content;
+            this.name = name;
             this.details = details;
             this.cover = cover;
         }
 
         @Override
         public String toString() {
-            return content;
+            return name;
         }
     }
 }

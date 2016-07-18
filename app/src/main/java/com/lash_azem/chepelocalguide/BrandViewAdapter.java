@@ -1,5 +1,7 @@
 package com.lash_azem.chepelocalguide;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -40,7 +42,7 @@ public class BrandViewAdapter extends RecyclerView.Adapter<BrandViewAdapter.View
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
         //holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.mContentView.setText(mValues.get(position).name);
         //holder.mDetailView.setText(mValues.get(position).details);
         holder.mCover.setImageResource(mValues.get(position).cover);
 
@@ -52,6 +54,11 @@ public class BrandViewAdapter extends RecyclerView.Adapter<BrandViewAdapter.View
                     // fragment is attached to one) that an item has been selected.
                     mListener.onListFragmentInteraction(holder.mItem);
                 }
+                Context context = v.getContext();
+                Intent intent = new Intent(context, LocalDetailActivity.class);
+                intent.putExtra(LocalDetailFragment.ARG_ITEM_ID, holder.mItem.id);
+
+                context.startActivity(intent);
             }
         });
     }
