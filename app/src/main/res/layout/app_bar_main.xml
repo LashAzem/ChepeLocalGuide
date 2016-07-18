@@ -26,7 +26,7 @@
                     app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitStart"
+                    android:scaleType="fitXY"
                     android:id="@+id/IntroImage"
                     android:contentDescription="@string/introimageview"
                     android:src="@drawable/intro_text" />
