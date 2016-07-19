@@ -52,6 +52,10 @@ public class LocalDetailFragment extends Fragment {
             if (appBarLayout != null) {
                 appBarLayout.setTitle(mItem.name);
             }
+            ImageView imageView = (ImageView) activity.findViewById(R.id.backdrop);
+            if (imageView != null) {
+                imageView.setImageResource(mItem.cover);
+            }
         }
     }
 
