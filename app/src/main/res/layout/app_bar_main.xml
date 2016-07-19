@@ -23,13 +23,40 @@
             app:contentScrim="?attr/colorPrimary">
 
                 <ImageView
-                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
                     android:layout_width="wrap_content"
                     android:layout_height="225dp"
                     android:scaleType="fitCenter"
                     android:id="@+id/IntroImage"
                     android:contentDescription="@string/introimageview"
                     android:src="@drawable/intro_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="?attr/actionBarSize"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/introTextTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:text="DESCUBRE"/>
+
+                <TextView
+                    android:id="@+id/introText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:text="@string/slide_2_desc"
+                    android:layout_below="@+id/introTextTitle"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"

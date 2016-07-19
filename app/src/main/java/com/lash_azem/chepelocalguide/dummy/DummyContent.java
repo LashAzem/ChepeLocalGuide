@@ -55,29 +55,32 @@ public class DummyContent {
                 "Si nos bañamos y secamos todos los días por qué no con arte y diseño?Useful -inspiring day a day designed paños con frases e imágenes que le shift el día.",
                 R.drawable.local_nomada));
         addItem(new DummyItem("14",
-                "Trash",
-                "eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.",
-                R.drawable.local_dummy));
+                "Trash lifestyle",
+                "Fabricamos accesorios de uso diario utilizando bolsas de plástico y lonas recicladas.\n" +
+                 "Si usted tiene un accesorio TRASH, ayudó a tener un mundo más limpio. En sus diseños encuentra productos y bolsas plásticas que iban directo a la basura.",
+                R.drawable.local_trash));
         addItem(new DummyItem("15",
                 "Va de Nuevo",
-                "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.",
-                R.drawable.local_dummy));
+                "Diseño de bolsos ecológicos a partir de cuero reciclado/\n" + "Ecologic bags from upcycled leather",
+                R.drawable.local_vadenuevo));
         addItem(new DummyItem("16",
                 "Pez",
                 "Sed ut perspiciatis unde omnis iste natus error sit voluptatem",
                 R.drawable.local_pez));
         addItem(new DummyItem("17",
-                "Cabeza de vinil Banda",
-                "Sed ut perspiciatis unde omnis iste",
-                R.drawable.local_dummy));
+                "Cabeza de Vinil",
+                "Rock n' Roll costarricense",
+                R.drawable.local_cabezavinil));
         addItem(new DummyItem("18",
-                "Gato Negro",
-                "laudantium, totam rem aperiam, eaq",
-                R.drawable.local_dummy));
+                "Cuero Papel y tijera",
+                "En bolsos, carteras, maletines, libretas y accesorios se expresa con fuerza el carácter y la estética propia del cuero. Bolsos, Maletines, Carteras, Billeteras, Accesorios, Libretas, etc.",
+                R.drawable.local_cueropapel));
         addItem(new DummyItem("19",
                 "Nabruk",
-                "Doloremque laudantium, totam rem aperiam, eaq",
-                R.drawable.local_dummy));
+                "A la venta en Atelier de Diseño Orgánico\n" +
+                        "Escazú Centro\n" +
+                        "De la Iglesia de San Miguel, 200 sur y 100 oeste ",
+                R.drawable.local_nabruk));
     }
 
     private static void addItem(DummyItem item) {
@@ -88,12 +91,18 @@ public class DummyContent {
         public final String id;
         public final String name;
         public final String details;
+        //public final String location;
+        //public final String contacto;
+        //public final String web;
         public final int cover;
 
         public DummyItem(String id, String name, String details, int cover) {
             this.id = id;
             this.name = name;
             this.details = details;
+            //this.location = location;
+            //this.contacto = contacto;
+            //this.web = web;
             this.cover = cover;
         }
 
