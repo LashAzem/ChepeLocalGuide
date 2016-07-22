@@ -1,14 +1,15 @@
 package com.lash_azem.chepelocalguide.login;
 
-import com.herprogramacion.carinsurance.BasePresenter;
-import com.herprogramacion.carinsurance.BaseView;
+
+import com.lash_azem.chepelocalguide.BasePresenter;
+import com.lash_azem.chepelocalguide.BaseView;
 
 /**
  * Interacción MVP en Login
  */
 public interface LoginContract {
 
-    interface View extends BaseView<Presenter>{
+    interface View extends BaseView<Presenter> {
         void showProgress(boolean show);
 
         void setEmailError(String error);
@@ -26,7 +27,9 @@ public interface LoginContract {
         void showNetworkError();
     }
 
-    interface Presenter extends BasePresenter{
+    interface Presenter extends BasePresenter {
         void attemptLogin(String email, String password);
+
+        void start();
     }
 }

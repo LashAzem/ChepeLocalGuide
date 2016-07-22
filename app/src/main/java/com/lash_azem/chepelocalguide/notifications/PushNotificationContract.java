@@ -1,8 +1,10 @@
 package com.lash_azem.chepelocalguide.notifications;
 
-import com.herprogramacion.carinsurance.BasePresenter;
-import com.herprogramacion.carinsurance.BaseView;
-import com.herprogramacion.carinsurance.data.PushNotification;
+
+
+import com.lash_azem.chepelocalguide.BasePresenter;
+import com.lash_azem.chepelocalguide.BaseView;
+import com.lash_azem.chepelocalguide.data.PushNotification;
 
 import java.util.ArrayList;
 
@@ -11,7 +13,7 @@ import java.util.ArrayList;
  */
 public interface PushNotificationContract {
 
-    interface View extends BaseView<Presenter>{
+    interface View extends BaseView<Presenter> {
 
         void showNotifications(ArrayList<PushNotification> notifications);
 
@@ -20,7 +22,7 @@ public interface PushNotificationContract {
         void popPushNotification(PushNotification pushMessage);
     }
 
-    interface Presenter extends BasePresenter{
+    interface Presenter extends BasePresenter {
 
         void registerAppClient();
 

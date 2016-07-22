@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.herprogramacion.carinsurance.R;
-import com.herprogramacion.carinsurance.data.PushNotification;
+import com.lash_azem.chepelocalguide.R;
+import com.lash_azem.chepelocalguide.data.PushNotification;
 
 import java.util.ArrayList;
 

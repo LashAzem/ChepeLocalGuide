@@ -28,8 +28,8 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.herprogramacion.carinsurance.R;
-import com.herprogramacion.carinsurance.notifications.PushNotificationsActivity;
+import com.lash_azem.chepelocalguide.R;
+import com.lash_azem.chepelocalguide.notifications.PushNotificationsActivity;
 
 /**
  * Muestra el formulario de login

@@ -3,8 +3,8 @@ package com.lash_azem.chepelocalguide.notifications;
 import android.text.TextUtils;
 
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.herprogramacion.carinsurance.data.PushNotificationsRepository;
-import com.herprogramacion.carinsurance.data.PushNotification;
+import com.lash_azem.chepelocalguide.data.PushNotification;
+import com.lash_azem.chepelocalguide.data.PushNotificationsRepository;
 
 import java.util.ArrayList;
 

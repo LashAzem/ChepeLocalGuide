@@ -12,9 +12,10 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.herprogramacion.carinsurance.R;
-import com.herprogramacion.carinsurance.notifications.PushNotificationsActivity;
-import com.herprogramacion.carinsurance.notifications.PushNotificationsFragment;
+import com.lash_azem.chepelocalguide.R;
+import com.lash_azem.chepelocalguide.notifications.PushNotificationsActivity;
+import com.lash_azem.chepelocalguide.notifications.PushNotificationsFragment;
+
 
 import java.util.Map;
 

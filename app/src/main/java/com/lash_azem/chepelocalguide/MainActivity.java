@@ -1,5 +1,6 @@
 package com.lash_azem.chepelocalguide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.FragmentManager;
@@ -12,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ImageView;
+
+import com.lash_azem.chepelocalguide.notifications.PushNotificationsActivity;
+import com.lash_azem.chepelocalguide.notifications.PushNotificationsFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -59,7 +63,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             setFragment(0);
         } else if (id == R.id.nav_favorites) {
-            setFragment(1);
+            //setFragment(1);
+            startActivity(new Intent(this, PushNotificationsActivity.class));
         } else if (id == R.id.nav_manage) {
             setFragment(2);
         }
@@ -83,12 +88,6 @@ public class MainActivity extends AppCompatActivity
                 title="Descubrir";
                 break;
             case 1:
-                fragmentManager = getSupportFragmentManager();
-                fragmentTransaction = fragmentManager.beginTransaction();
-                FavoritesFragment favoritesFragment = new FavoritesFragment();
-                fragmentTransaction.replace(R.id.fragment, favoritesFragment);
-                fragmentTransaction.commit();
-                title="Favoritos";
                 break;
             case 2:
                 break;

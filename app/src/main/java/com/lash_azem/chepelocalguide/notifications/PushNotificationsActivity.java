@@ -7,8 +7,9 @@ import android.support.v7.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.herprogramacion.carinsurance.R;
-import com.herprogramacion.carinsurance.login.LoginActivity;
+import com.lash_azem.chepelocalguide.R;
+import com.lash_azem.chepelocalguide.login.LoginActivity;
+
 
 public class PushNotificationsActivity extends AppCompatActivity {
 

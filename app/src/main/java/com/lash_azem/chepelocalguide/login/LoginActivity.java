@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.firebase.auth.FirebaseAuth;
-import com.herprogramacion.carinsurance.R;
+import com.lash_azem.chepelocalguide.R;
 
 /**
  * Screen de login basada en el método email/password de Firebase
