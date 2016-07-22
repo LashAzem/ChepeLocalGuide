@@ -177,7 +177,7 @@ public class LoginFragment extends Fragment implements LoginContract.View {
                 });
     }
 
-    private void setupTitle(View root) {
+     private void setupTitle(View root) {
         ((TextView) root.findViewById(R.id.tv_logo))
                 .setTypeface(Typeface.createFromAsset(
                         getActivity().getAssets(), "fonts/fjalla_on.otf"));
