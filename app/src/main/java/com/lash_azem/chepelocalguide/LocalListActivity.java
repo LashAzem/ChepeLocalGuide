@@ -13,6 +13,7 @@ import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -44,15 +45,6 @@ public class LocalListActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         View recyclerView = findViewById(R.id.local_list);
         assert recyclerView != null;
@@ -92,6 +84,7 @@ public class LocalListActivity extends AppCompatActivity {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(mValues.get(position).id);
             holder.mContentView.setText(mValues.get(position).name);
+            holder.mCover.setImageResource(mValues.get(position).cover);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -124,6 +117,7 @@ public class LocalListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
+            public ImageView mCover;
             public DummyContent.DummyItem mItem;
 
             public ViewHolder(View view) {
@@ -131,6 +125,7 @@ public class LocalListActivity extends AppCompatActivity {
                 mView = view;
                 mIdView = (TextView) view.findViewById(R.id.id);
                 mContentView = (TextView) view.findViewById(R.id.content);
+                mCover = (ImageView) view.findViewById(R.id.cover);
             }
 
             @Override
